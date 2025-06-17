@@ -2,7 +2,7 @@ import requests
 import sys
 import pandas as py
 class api: 
-    api_key = "RGAPI-7a52097a-a062-4fa1-8f11-faeb07b11270"
+    api_key = "RGAPI-9d2c41cd-bb35-479a-92b1-cda7bc32eca7"
     def get_puuid(self, name, tag):
         user_api_url = "https://americas.api.riotgames.com/riot/account/v1/accounts/by-riot-id"
         self.name = name
@@ -58,9 +58,8 @@ class api:
         except:
             raise Exception("match not found")
     def __init__(self):
+        
         '''
-        puuid = self.get_puuid("genjigod", "genji")
-        print(puuid)
         matches = self.get_matches(puuid)
         print(matches[0])
         match = self.get_match_data(matches[0])
