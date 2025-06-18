@@ -59,18 +59,18 @@ class api:
             raise Exception("match not found")
     def __init__(self):
         
-        '''
-        matches = self.get_matches(puuid)
+        
+        matches = self.get_matches('mjP3GtqTPOeE2-jg8bqSOt2QsI5ml5VYA4O5jbKjLA7dVUIsVj44LuPN6kwD3NKV9AZOpVAJPS1htw')
         print(matches[0])
         match = self.get_match_data(matches[0])
         print(match['info']['participants'][0]['riotIdGameName'])
-        for user in match['info']['participants']:
-            print(user['riotIdGameName'])
+        print(match['info']['participants'][0].keys())
+        print(match['info']['participants'][0]['baronKills'])
         
-        chall_ladder = self.get_challenger_ladder()
-        for user in chall_ladder['entries']:
-            print(user['puuid'])
-        '''
+        #chall_ladder = self.get_challenger_ladder()
+        #for user in chall_ladder['entries']:
+            #print(user['puuid'])
+        
         
 if __name__ == "__main__":
     api()
